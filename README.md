@@ -65,6 +65,10 @@ Attach these simple css and javascript code to your html file and create a dynam
         visibility: visible;
     }
 ```
+<br />
+
+**(2.1) You can edit the margins and paddings according to your suitable configurations**
+
 **(3) Add class `input` to the parent class containing that `input field`**
 <br />
 **(3.1) Add a span with class `input-caption` to act as placeholder**
