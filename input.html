@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pretty input</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <div class="form-group input">
+    
+    <span class="input-caption">Enter username</span>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    
+  </div>
+        <div class="input">
+        <span class="input-caption">Enter username</span>
+        <input type="text" placeholder="Put your user name here...">
+        </div>
+        <div class="input">
+        <span class="input-caption">Enter email address</span>
+        <input type="text" placeholder="Enter your email">
+        </div>
+    </div>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script>
+        $(".input").on("focusin",function(i){$(this).children(".input-caption").addClass("caption-title")}),$(".input").on("click",function(i){$(this).children(".input-caption").addClass("caption-title"),$(this).children("input").focus()}),$(".input").on("focusout",function(i){var t=$(this).children("input").val();0<$.trim(t).length?$(this).children(".input-caption").addClass("caption-title"):$(this).children(".input-caption").removeClass("caption-title")});
+    </script>
+    
+</body>
+</html>
