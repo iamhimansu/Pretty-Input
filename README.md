@@ -72,8 +72,9 @@ Attach these simple css and javascript code to your html file and create a dynam
         }
         </pre>
         
-<br />(3) Add class <kbd>input</kbd> to the parent class containing that <kbd>input field</kbd>
+<br />(3) Add class <kbd>input</kbd> to the parent class containing that <kbd>input field</kbd><br />
 For example:
+<br />
         ```html
         <div class="form-control input">
         <span class="input-caption">Enter email address</span>
