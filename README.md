@@ -99,4 +99,7 @@ box-shadow: none;
 
 **This removes the default ouline shadow of input fields**
 
-> Himanshu Raj Aman
+
+`YOU ARE WELCOME TO ENHANCE THIS CODE`
+<br />
+> Project by Himanshu Raj Aman
