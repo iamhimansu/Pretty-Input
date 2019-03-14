@@ -8,8 +8,7 @@ Attach these simple css and javascript code to your html file and create a dynam
 
 
 ```javascript
-<script
-src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 ```
 
     
