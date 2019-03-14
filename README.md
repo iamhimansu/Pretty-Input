@@ -65,7 +65,9 @@ Attach these simple css and javascript code to your html file and create a dynam
         visibility: visible;
     }
 ```
-**(3) Add class <kbd>input</kbd> to the parent class containing that <kbd>input field</kbd>**
+**(3) Add class `input` to the parent class containing that `input field`**
+<br />
+**(3.1) Add a span with class `input-caption` to act as placeholder**
 <br />
 For example:
 ```html
