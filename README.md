@@ -14,7 +14,8 @@ Attach these simple css and javascript code to your html file and create a dynam
    
  (2) Attach this <kbd>CSS</kbd> style.<br />
  
- <pre>*{
+ ```css
+ *{
             box-sizing: border-box;
         }
         html, body{
@@ -69,19 +70,21 @@ Attach these simple css and javascript code to your html file and create a dynam
         .input:focus-within > input::placeholder{
             visibility: visible;
         }
-        </pre>
+        ```
         
 <br />(3) Add class <kbd>input</kbd> to the parent class containing that <kbd>input field</kbd>
-<pre>For example:
-        < div class="form-control input">
-        < span class="input-caption">Enter email address</ span>
-        < input type="text" placeholder="Enter your email" />
-        < /div>
-        </pre><br />
+For example:
+        ```html
+        <div class="form-control input">
+        <span class="input-caption">Enter email address</span>
+        <input type="text" placeholder="Enter your email"/>
+        </div>
+        ```
+        <br />
 (4) Add this JS SNIPPET to your HTML file.
 
 ```javascript
-    $(".input").on("focusin",function(i){$(this).children(".input-caption").addClass("caption-  title")}),$(".input").on("click",function(i){$(this).children(".input-caption").addClass("caption-title"),$(this).children("input").focus()}),$(".input").on("focusout",function(i){var t=$(this).children("input").val();0<$.trim(t).length?$(this).children(".input-caption").addClass("caption-title"):$(this).children(".input-caption").removeClass("caption-title")});
+    $(".input").on("focusin",function(i){$(this).children(".input-caption").addClass("caption-title")}),$(".input").on("click",function(i){$(this).children(".input-caption").addClass("caption-title"),$(this).children("input").focus()}),$(".input").on("focusout",function(i){var t=$(this).children("input").val();0<$.trim(t).length?$(this).children(".input-caption").addClass("caption-title"):$(this).children(".input-caption").removeClass("caption-title")});
 ```
 <br />
 # Hey! you created your dynamic input field
