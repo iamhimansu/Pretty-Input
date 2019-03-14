@@ -87,7 +87,7 @@ $(".input").on("focusin",function(i){$(this).children(".input-caption").addClass
 ```
 <br />
 
-# Hey! you created your dynamic input field
+# This is it, Hey! you created your dynamic input field
 <br />
 
 **Changes** : _If your are using bootstrap copy this css into your style_<br />
