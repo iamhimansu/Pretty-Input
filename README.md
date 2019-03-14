@@ -9,9 +9,7 @@ Attach these simple css and javascript code to your html file and create a dynam
 
 ```javascript
 <script
-src="http://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
+src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 ```
 
     
