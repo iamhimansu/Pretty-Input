@@ -17,7 +17,9 @@ crossorigin="anonymous"></script>
     
     
    
- (2) Attach this <kbd>CSS</kbd> style.<br />
+**Attach this <kbd>CSS</kbd> style.**
+
+<br />
  
 ```css
     *{
@@ -75,9 +77,14 @@ crossorigin="anonymous"></script>
     .input:focus-within > input::placeholder{
         visibility: visible;
     }
-    ```
+```
         
-<br />(3) Add class <kbd>input</kbd> to the parent class containing that <kbd>input field</kbd><br />
+<br />
+
+**Add class <kbd>input</kbd> to the parent class containing that <kbd>input field</kbd>**
+
+<br />
+
 For example:
 <br />
 ```html
@@ -87,19 +94,28 @@ For example:
 </div>
 ```
 <br />
-(4) Add this JS SNIPPET to your HTML file.
+
+**Add this JS SNIPPET to your HTML file.**
 
 ```javascript
 $(".input").on("focusin",function(i){$(this).children(".input-caption").addClass("caption-title")}),$(".input").on("click",function(i){$(this).children(".input-caption").addClass("caption-title"),$(this).children("input").focus()}),$(".input").on("focusout",function(i){var t=$(this).children("input").val();0<$.trim(t).length?$(this).children(".input-caption").addClass("caption-title"):$(this).children(".input-caption").removeClass("caption-title")});
 ```
 <br />
+
 # Hey! you created your dynamic input field
 <br />
-<pre>Changes : If your are using bootstrap copy this css into your style</pre><br />
-<pre>.form-control:focus{
-            border: none;
-            outline: none;
-            box-shadow: none;
-        }
-        </pre>
-<br /><b>This removes the default ouline shadow of input fields</b>
+
+**Changes** : _If your are using bootstrap copy this css into your style_<br />
+
+```css
+.form-control:focus{
+border: none;
+outline: none;
+box-shadow: none;
+}
+```
+<br />
+
+**This removes the default ouline shadow of input fields**
+
+> Himanshu Raj Aman
