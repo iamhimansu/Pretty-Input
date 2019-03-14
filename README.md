@@ -14,7 +14,7 @@ Attach these simple css and javascript code to your html file and create a dynam
    
  (2) Attach this <kbd>CSS</kbd> style.<br />
  
- ```css
+ <pre>
  *{
             box-sizing: border-box;
         }
@@ -70,7 +70,7 @@ Attach these simple css and javascript code to your html file and create a dynam
         .input:focus-within > input::placeholder{
             visibility: visible;
         }
-        ```
+        </pre>
         
 <br />(3) Add class <kbd>input</kbd> to the parent class containing that <kbd>input field</kbd>
 For example:
