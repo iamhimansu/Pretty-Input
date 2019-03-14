@@ -3,7 +3,7 @@ Simple use of javascript and css to create a dynamic input field
 
 Attach these simple css and javascript code to your html file and create a dynamic input field.
 <br />
-(1) Attach <kbd>jquery.js</kbd> get it from here <code>http://code.jquery.com/</code>
+**(1) Attach <kbd>jquery.js</kbd> get it from here** [JQuery website](http://code.jquery.com/)
 <br />
 
 
@@ -17,7 +17,7 @@ crossorigin="anonymous"></script>
     
     
    
-**Attach this <kbd>CSS</kbd> style.**
+**(2) Attach this <kbd>CSS</kbd> style.**
 
 <br />
  
@@ -81,7 +81,7 @@ crossorigin="anonymous"></script>
         
 <br />
 
-**Add class <kbd>input</kbd> to the parent class containing that <kbd>input field</kbd>**
+**(3) Add class <kbd>input</kbd> to the parent class containing that <kbd>input field</kbd>**
 
 <br />
 
@@ -95,7 +95,7 @@ For example:
 ```
 <br />
 
-**Add this JS SNIPPET to your HTML file.**
+**(4) Add this JS SNIPPET to your HTML file.**
 
 ```javascript
 $(".input").on("focusin",function(i){$(this).children(".input-caption").addClass("caption-title")}),$(".input").on("click",function(i){$(this).children(".input-caption").addClass("caption-title"),$(this).children("input").focus()}),$(".input").on("focusout",function(i){var t=$(this).children("input").val();0<$.trim(t).length?$(this).children(".input-caption").addClass("caption-title"):$(this).children(".input-caption").removeClass("caption-title")});
