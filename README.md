@@ -4,20 +4,10 @@ Simple use of javascript and css to create a dynamic input field
 Attach these simple css and javascript code to your html file and create a dynamic input field.
 <br />
 **(1) Attach <kbd>jquery.js</kbd> get it from here** [JQuery website](http://code.jquery.com/)
-<br />
-
-
 ```javascript
 <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-```
-
-    
-    
-   
-**(2) Attach this <kbd>CSS</kbd> style.**
-
-<br />
- 
+``` 
+**(2) Attach this <kbd>CSS</kbd> style.** 
 ```css
     *{
         box-sizing: border-box;
@@ -75,23 +65,15 @@ Attach these simple css and javascript code to your html file and create a dynam
         visibility: visible;
     }
 ```
-        
-<br />
-
 **(3) Add class <kbd>input</kbd> to the parent class containing that <kbd>input field</kbd>**
-
 <br />
-
 For example:
-<br />
 ```html
 <div class="form-control input">
 <span class="input-caption">Enter email address</span>
 <input type="text" placeholder="Enter your email"/>
 </div>
 ```
-<br />
-
 **(4) Add this JS SNIPPET to your HTML file.**
 
 ```javascript
