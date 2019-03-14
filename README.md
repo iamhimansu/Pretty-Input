@@ -4,18 +4,23 @@ Simple use of javascript and css to create a dynamic input field
 Attach these simple css and javascript code to your html file and create a dynamic input field.
 <br />
 (1) Attach <kbd>jquery.js</kbd> get it from here <code>http://code.jquery.com/</code>
-    <br />
-    <pre><script
-    src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script></pre>
+<br />
+<pre>
+
+```javascript
+<script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+```
+</pre>
     
     
    
  (2) Attach this <kbd>CSS</kbd> style.<br />
  
  <pre>
- *{
+        *{
             box-sizing: border-box;
         }
         html, body{
@@ -75,17 +80,17 @@ Attach these simple css and javascript code to your html file and create a dynam
 <br />(3) Add class <kbd>input</kbd> to the parent class containing that <kbd>input field</kbd><br />
 For example:
 <br />
-        ```html
-        <div class="form-control input">
-        <span class="input-caption">Enter email address</span>
-        <input type="text" placeholder="Enter your email"/>
-        </div>
-        ```
-        <br />
+```html
+<div class="form-control input">
+<span class="input-caption">Enter email address</span>
+<input type="text" placeholder="Enter your email"/>
+</div>
+```
+<br />
 (4) Add this JS SNIPPET to your HTML file.
 
 ```javascript
-    $(".input").on("focusin",function(i){$(this).children(".input-caption").addClass("caption-title")}),$(".input").on("click",function(i){$(this).children(".input-caption").addClass("caption-title"),$(this).children("input").focus()}),$(".input").on("focusout",function(i){var t=$(this).children("input").val();0<$.trim(t).length?$(this).children(".input-caption").addClass("caption-title"):$(this).children(".input-caption").removeClass("caption-title")});
+$(".input").on("focusin",function(i){$(this).children(".input-caption").addClass("caption-title")}),$(".input").on("click",function(i){$(this).children(".input-caption").addClass("caption-title"),$(this).children("input").focus()}),$(".input").on("focusout",function(i){var t=$(this).children("input").val();0<$.trim(t).length?$(this).children(".input-caption").addClass("caption-title"):$(this).children(".input-caption").removeClass("caption-title")});
 ```
 <br />
 # Hey! you created your dynamic input field
