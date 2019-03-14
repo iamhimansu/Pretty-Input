@@ -80,13 +80,10 @@ Attach these simple css and javascript code to your html file and create a dynam
         </pre><br />
 (4) Add this JS SNIPPET to your HTML file.
 
-<pre>
-
-<script>
-        $(".input").on("focusin",function(i){$(this).children(".input-caption").addClass("caption-title")}),$(".input").on("click",function(i){$(this).children(".input-caption").addClass("caption-title"),$(this).children("input").focus()}),$(".input").on("focusout",function(i){var t=$(this).children("input").val();0<$.trim(t).length?$(this).children(".input-caption").addClass("caption-title"):$(this).children(".input-caption").removeClass("caption-title")});
-    </script>
-
-</pre><br />
+```javascript
+    $(".input").on("focusin",function(i){$(this).children(".input-caption").addClass("caption-  title")}),$(".input").on("click",function(i){$(this).children(".input-caption").addClass("caption-title"),$(this).children("input").focus()}),$(".input").on("focusout",function(i){var t=$(this).children("input").val();0<$.trim(t).length?$(this).children(".input-caption").addClass("caption-title"):$(this).children(".input-caption").removeClass("caption-title")});
+```
+<br />
 # Hey! you created your dynamic input field
 <br />
 <pre>Changes : If your are using bootstrap copy this css into your style</pre><br />
