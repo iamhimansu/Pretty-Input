@@ -1,6 +1,7 @@
 # Pretty-Input-Field
 
 ##DEMO : https://github.com/iamhimansu/Pretty-Input/
+
 Simple use of javascript and css to create a dynamic input field
 
 Attach these simple css and javascript code to your html file and create a dynamic input field.
